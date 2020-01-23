@@ -16,6 +16,6 @@
   },
   "scripts": {
     "start": "parcel src/index.html -d dev --open",
-    "build": "parcel build src/index.html src/index.jsx --no-content-hash --public-url ./ --no-source-maps"
+    "build": "NODE_ENV=production parcel build src/* --no-content-hash --public-url ./ --no-source-maps"
   }
 }
