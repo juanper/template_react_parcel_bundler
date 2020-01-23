@@ -1,0 +1,21 @@
+{
+  "name": "template_react_parcel_bundler",
+  "version": "1.0.0",
+  "main": "index.jsx",
+  "repository": "https://github.com/juanper/template_react_parcel_bundler.git",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "parcel-bundler": "^1.12.4"
+  },
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "scripts": {
+    "start": "parcel src/index.html -d dev --open",
+    "build": "parcel build src/index.html src/index.jsx --no-content-hash --public-url ./ --no-source-maps"
+  }
+}
